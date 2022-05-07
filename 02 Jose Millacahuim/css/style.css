@@ -1,0 +1,465 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*------------------------------ General ---------------------------------------------------------------------*/
+
+/*Cuerpo de la pagina*/
+body{
+    font-family: roboto, sans-serif;
+    line-height: 1.8;
+    background-color: #2d3436;
+    background-image: linear-gradient(280deg, #2d3436 0%, #000000 30%);
+}
+
+/*All te tittles*/
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900 !important;
+}
+
+/*All texts*/
+a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 900;
+    color: #20212c;
+}
+
+/*All img*/
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.emptyBox{
+    background-image: url(../img/emptyBoxImg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 400px;
+}
+
+/*------------------------------ Navbar ---------------------------------------------------------------------*/
+/*Navbar, main box*/
+.navbar {
+    border: none;
+}
+
+/*Navbar tittle*/
+#navtittle{
+    font-family: Sacramento !important;
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.navPick{
+    font-weight: normal;
+}
+
+/*Efecto sobre Nav*/
+#navtittle:hover{
+    transform: scale(1.1, 1.2);
+}
+
+.navPick:hover{
+    transform: scale(1.1, 1.2);
+    color: #0c68be;
+}
+
+
+/*Navbar text color*/
+.navbar-dark .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    background: rgb(27, 197, 212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+@media(max-width:991px){
+    #burgerNav{
+        margin-left: 10px;
+        padding: 5px;
+        width: 13%;
+        text-align: right;
+    }
+}
+
+.nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+}
+  
+/*------------------------------ Hero ---------------------------------------------------------------------*/
+
+/*General*/
+
+#home{
+    
+    background-image: url(../img/HeroImgDos.jpg);
+    min-height: 100vh;
+    color: #fff;
+    width: 100%;
+    margin-right: 0px;
+}
+
+/* Caja de Iconos*/
+.socialIcons{
+    margin-right: 4px;
+    margin-top: 262px;
+    padding-right: 0px;
+}
+
+/*Iconos*/
+.socialIcons a{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 30px;
+    transition: all 200ms; 
+    padding: 0px;
+}
+
+.removeSocialIcons{
+    visibility: hidden;
+}
+    
+/*Efectos sobre Iconos*/
+#whatsapp:hover{
+    transform: scale(1.1, 1.2);
+    color: #0d9e5d;
+}
+
+#facebook:hover{
+    transform: scale(1.1, 1.2);
+    color: #0c68be;
+}
+
+#instagram:hover{
+    transform: scale(1.1, 1.2);
+    color: #a21b77;
+}
+
+#youtube:hover{
+    transform: scale(1.1, 1.2);
+    color: #e60000;
+}
+
+/*------------------------------ Bio ---------------------------------------------------------------------*/
+/*Caja General*/
+#bio{
+    min-height: 100vh;
+    background-color: #2d3436;
+    background-image: linear-gradient(280deg, #2d3436 0%, #000000 30%);
+    padding-top:60px;
+    border: none;
+    width: 100%;
+}
+
+/*Imagen Bio*/
+#imgBio{
+    background-image: url(../img/imgBioDos.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 23% 100%;
+    width: 100%;
+    height: 550px;
+    border: none;
+    margin-left: 20px;
+}
+
+/*Titulo Bio*/
+.section-intro>h1{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-top: 80px;
+    
+}
+
+
+/*Texto Bio*/
+.section-intro>p{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+
+/*------------------------------ Video ---------------------------------------------------------------------*/
+#video{
+    background-color: #000000;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+/*------------------------------ Clases ---------------------------------------------------------------------*/
+/*Caja Geneeral*/
+#clases{
+    width: 100%;
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: #2d3436;
+    background-image: linear-gradient(280deg, #1f272a 0%, #000000 30%);
+}
+
+/*Caja titulo*/
+#clasesTittle{
+    padding: 0px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+/*Titulo*/
+#clasesTittle>h1{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+/*Subtitulo*/
+#clasesTittle>p{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/*Icono Card*/
+.feature i{
+    background: -webkit-linear-gradient(rgba(0, 224, 254, 0.7), rgba(17, 7, 254, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+}
+
+/*Titulo Card*/
+.feature>h5{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+/*Texto Card*/
+.feature>p{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+
+/*------------------------------ Galeria ---------------------------------------------------------------------*/
+/*Caja General*/
+#galeria{  
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2d3436;
+    background-image: linear-gradient(280deg, #1f272a 0%, #000000 30%);
+    padding-top: 80px;
+}
+
+/*Caja General de Carousel*/
+#carouselExampleCaptions{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0px;
+}
+
+/*Caja dem Imagenes de Carousel*/
+.carouselImg{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*Imagenes de Carousel*/
+#carouselUno{
+    background-image: url(../img/carousel1.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-size: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#carouselDos{
+    background-image: url(../img/carousel2.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    background-size: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#carouselTres{
+    background-image: url(../img/carousel3.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-size: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*------------------------------ Fornmulario ---------------------------------------------------------------------*/
+/*Caja General*/
+#contact{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+/*Caja general de contacto*/
+#maincontact{
+    width: 100%;
+    min-height: 100vh;
+}
+/*Caja titulo*/
+#contactTittle{
+    padding: 0px;
+    height: 60px;
+    margin-bottom: -150px;
+    width: 100%;
+}
+
+/*Titulo*/
+#contactTittle>h1{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+
+/*Caja contenedora del formulario*/
+#contactform{
+    width: 100%;
+    height: 428px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*Formulario*/
+form .form-control{
+    height: 50px;
+    background-color: transparent;
+    line-height: 54px;
+    color: #fff;
+    border-radius: 0px;
+}
+
+form .form-control::placeholder{    
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+form .form-control:focus{
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    line-height: 54px;
+}
+
+/*Text Area*/
+#textarea{
+    width: 100%;
+    height: 138px;
+    resize: none;    
+}
+
+/*Boton*/
+.btn {
+    padding:  14px 22px;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    color: #fff;
+}
+
+.btn-main{
+    background: linear-gradient(to right, #044e57, #040164);
+    border-radius: 80px;
+    width: 110px;
+    border: none;
+    font-weight: 600;
+    color: #fff;    
+    font-family: Montserrat !important;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Iconos redes*/
+#maincontactIcons{
+    width: 100%;
+    height: 94px;
+    padding-left: 40px;
+}
+
+#contactIcons>a{
+    font-size: 40px;
+    letter-spacing: 17px;
+    transition: all 200ms;
+    text-align: center;
+    padding: 15px;
+    visibility: visible;
+    color: #fff;
+}
+
+/*------------------------------ Footer ---------------------------------------------------------------------*/
+footer{
+    background-color: #2d3436;
+    background-image: linear-gradient(280deg, #000000 30%, #161c1c 100%);
+    border: none;
+    text-align: center;
+    height: 61px;
+    width: 100%;
+}
+
+footer p{
+    color:  rgba(255, 255, 255, 0.833);
+    font-family: Montserrat !important;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 60px;
+}
+
+#maker{
+    color: rgb(174, 174, 174);
+    letter-spacing: 1px;
+}
